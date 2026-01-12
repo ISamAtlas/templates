@@ -1,6 +1,6 @@
 extends Button
 
-@export var target_scene_path:String
+@export var target_scene_path:String ##right click the target scene and press 'copy path'
 @export var should_pause := false
 
 var is_paused := false

@@ -23,14 +23,10 @@ text = "Back to Main Menu"
 script = ExtResource("1_oap8i")
 target_scene_path = "res://scenes/ui/main_menu.tscn"
 
-[node name="TextEdit" type="TextEdit" parent="."]
+[node name="TextEdit" type="Label" parent="."]
 offset_left = 201.0
 offset_top = 75.0
 offset_right = 968.0
 offset_bottom = 339.0
 theme_override_font_sizes/font_size = 20
-text = "wowowowoow
-
-made by zabi zen phia spooky sam yippeeee
-
-(just placeholders, same with the buttons for now)"
+text = "these aree the credits :3"

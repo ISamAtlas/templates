@@ -11,9 +11,17 @@ config_version=5
 [application]
 
 config/name="levels template"
+config/tags=PackedStringArray("template")
+run/main_scene="uid://dkahhjx081we3"
 config/features=PackedStringArray("4.5", "GL Compatibility")
 config/icon="res://icon.svg"
-config/tags=PackedStringArray("template")
+
+[autoload]
+
+AudioManager="*res://scenes/sounds/AudioManager.tscn"
+Global="*res://scripts/globals/Global.gd"
+SignalManager="*res://scripts/globals/SignalManager.gd"
+CanvasManager="*res://scenes/ui/CanvasManager.tscn"
 
 [rendering]
 
