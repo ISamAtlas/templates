@@ -1,0 +1,21 @@
+[gd_scene load_steps=3 format=3 uid="uid://1dhep8nqeo0u"]
+
+[ext_resource type="Script" uid="uid://fx5onf22g8qe" path="res://scripts/ui/buttons/generic_scene_change.gd" id="1_bo7sy"]
+[ext_resource type="Script" uid="uid://b8je1l1fckiyo" path="res://scripts/ui/buttons/make_server.gd" id="1_c58o6"]
+
+[node name="HighLevelUi" type="Node2D"]
+
+[node name="VBoxContainer" type="VBoxContainer" parent="."]
+offset_right = 40.0
+offset_bottom = 40.0
+
+[node name="Button" type="Button" parent="VBoxContainer"]
+layout_mode = 2
+text = "Create Server"
+script = ExtResource("1_c58o6")
+
+[node name="Button2" type="Button" parent="VBoxContainer"]
+layout_mode = 2
+text = "Join Game"
+script = ExtResource("1_bo7sy")
+target_scene_path = "res://scenes/ui/join_server.tscn"

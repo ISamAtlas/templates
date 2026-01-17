@@ -1,0 +1,12 @@
+[gd_scene load_steps=3 format=3 uid="uid://bvld1fi2j4f2x"]
+
+[ext_resource type="Script" uid="uid://bawogh7t72rq7" path="res://scripts/multiplayer/high_level_multiplayer_spawner.gd" id="1_wcyny"]
+[ext_resource type="PackedScene" uid="uid://cqnidtxjqwjjv" path="res://scenes/characters/high_level_network_player.tscn" id="2_bbe20"]
+
+[node name="Cave" type="Node2D"]
+
+[node name="MultiplayerSpawner" type="MultiplayerSpawner" parent="."]
+_spawnable_scenes = PackedStringArray("uid://cqnidtxjqwjjv")
+spawn_path = NodePath("..")
+script = ExtResource("1_wcyny")
+network_player = ExtResource("2_bbe20")
